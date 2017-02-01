@@ -1,0 +1,10 @@
+---
+path: .
+instances: 1
+buildpack: https://github.com/cloudfoundry/java-buildpack
+services:
+- avaliacao360mpaiva
+applications:
+- name: avaliacao360mpaiva
+  env:
+    SPRING_PROFILES_ACTIVE: prod, cloudfoundry

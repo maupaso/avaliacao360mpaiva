@@ -1,0 +1,22 @@
+version: '2'
+services:
+    avaliacao360mpaiva-app:
+        image: avaliacao360mpaiva
+        external_links:
+            - avaliacao360mpaiva-postgresql:postgresql
+            - avaliacao360mpaiva-elasticsearch:elasticsearch
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresql:5432/avaliacao360mpaiva
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=elasticsearch:9300
+        ports:
+            - 8080:8080
+    avaliacao360mpaiva-postgresql:
+        extends:
+            file: postgresql.yml
+            service: avaliacao360mpaiva-postgresql
+    avaliacao360mpaiva-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: avaliacao360mpaiva-elasticsearch
