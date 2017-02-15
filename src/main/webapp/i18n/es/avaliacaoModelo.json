@@ -1,0 +1,24 @@
+{
+    "avaliacao360MpaivaApp": {
+        "avaliacaoModelo" : {
+            "home": {
+                "title": "Avaliacao Modelos",
+                "createLabel": "Crear nuevo Avaliacao Modelo",
+                "createOrEditLabel": "Crear o editar Avaliacao Modelo",
+                "search": "Search for Avaliacao Modelo"
+            },
+            "created": "Un nuevo Avaliacao Modelo ha sido creado con el identificador {{ param }}",
+            "updated": "Un Avaliacao Modelo ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Avaliacao Modelo ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Avaliacao Modelo {{ id }}?"
+            },
+            "detail": {
+                "title": "Avaliacao Modelo"
+            },
+            "nome": "Nome",
+            "descricao": "Descricao",
+            "equipe": "Equipe"
+        }
+    }
+}
