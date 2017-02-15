@@ -20,9 +20,6 @@
 
     <cache alias="com.mpaiva.domain.User.persistentTokens" uses-template="simple"/>
 
-    <cache alias="com.mpaiva.domain.Equipe" uses-template="simple"/>
+    <cache alias="com.mpaiva.domain.PersistentAuditEvent" uses-template="simple"/>
 
-    <cache alias="com.mpaiva.domain.Equipe.membros" uses-template="simple"/>
-
-    <!-- jhipster-needle-ehcache-add-entry -->
 </config>
